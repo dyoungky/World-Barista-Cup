@@ -6,10 +6,205 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Barista Cup</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/86de12ba19.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo"><img src="./assets/logo-white.png"></div>
+            <div class="nav-right">
+                <div class="search-menu">
+                    <div class="search">
+                        <img src="./assets/icons/search.svg" />
+                        <input type="search" name="" id="search-input" placeholder="search">
+                    </div>
+                    <div>
+                        <ul class="social-icons">
+                            <li class="nav-icon"><a href=""><img src="./assets/icons/linkedin-white.svg" /></a></li>
+                            <li class="nav-icon"><a href=""><img src="./assets/icons/twitter-white.svg" /></a></li>
+                            <li class="nav-icon"><a href=""><img src="./assets/icons/instagram-white.svg" /></a></li>
+                            <li class="nav-icon"><a href=""><img src="./assets/icons/facebook-white.svg" /></a></li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div>
+                    <ul class="menu">
+                        <li class="menu-item active" data-link="#home">About us</li>
+                        <li class="menu-item" data-link="#Events">Events</li>
+                        <li class="menu-item" data-link="#Nordic">Nordic roaster</li>
+                        <li class="menu-item" data-link="#Results">Results</li>
+                        <li class="menu-item" data-link="#Links">Links</li>
+                        <li class="menu-item" data-link="#Contact">Contact</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <section class="main">
+        <div class="main-hero">
+            <img class="main-img" src="./assets/images/main.png" />
+            <div class="main-quote">
+                <h4>"To create an environment in which knowledge about coffee and its sphere can be obtained"</h4>
+            </div>
+
+        </div>
+
+
+
+        <!-- Posts -->
+
+
+
+        <div class="grid text-center post" style="--bs-columns: 10; --bs-gap: 1rem;">
+            <div class="g-col-6">
+                <div class="main-post">
+                    <div class="post-item">
+                        <img src="./assets/images/posts/Post thumbnail-4.png" />
+                        <div class="post-content">
+                            <h2>Wonderful Copenhagen 2021</h2>
+                            <p>Published 12</p>
+                            <h6>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                                dolor sit ametLorem ipsum dolor sit amet,</h6>
+                            <button class="btn-action-white">Read more</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/images/posts/Post thumbnail-4.png" />
+                        <div class="post-content">
+                            <h2>Wonderful Copenhagen 2021</h2>
+                            <p>Published 12</p>
+                            <h6>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                                dolor sit ametLorem ipsum dolor sit amet,</h6>
+                            <button class="btn-action-white">Read more</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/images/posts/Post thumbnail-4.png" />
+                        <div class="post-content">
+                            <h2>Wonderful Copenhagen 2021</h2>
+                            <p>Published 12</p>
+                            <h6>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                                dolor sit ametLorem ipsum dolor sit amet,</h6>
+                            <button class="btn-action-white">Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="post-pages">
+                        <button class="btn-action-white">Previous</button>
+                        <p>Page 1 of 5</p>
+                        <button class="btn-action-white">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="g-col-4">
+                <div class="post-right">
+                    <div class="shop">
+                        <h4>WBC Shop</h4>
+                        <p>Your shopping cart is empty</p>
+                        <button class="btn-action-white">Visit the shop</button>
+                    </div>
+
+                    <div class="event">
+                        <h4>Next event</h4>
+                        <h6>World Barista Cup 2021</h6>
+                        <p>Copenhagen, Denmark</p>
+                        <p>Dates: 25th, 27th August 2021</p>
+                        <p>Theme: SENSORY</p>
+                        <button class="btn-action-white">Sign up now</button>
+                    </div>
+
+                    <div class="score">
+                        <h4>Scoreboard</h4>
+                        <h6>List of winners from last year</h6>
+                        <p>2021 -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="sponsors">
+        <h2>World Barista Cup Sponsors</h2>
+        <ul>
+            <li><img src="./assets/images/sponsors/sponsor-1.png" /></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main"><img class="footer-logo" src="./assets/logo-white.png" />
+            <div class="social-media">
+                <ul class="social-icons">
+                    <li class="nav-icon"><a href=""><img src="./assets/icons/linkedin-white.svg" /></a></li>
+                    <li class="nav-icon"><a href=""><img src="./assets/icons/twitter-white.svg" /></a></li>
+                    <li class="nav-icon"><a href=""><img src="./assets/icons/instagram-white.svg" /></a></li>
+                    <li class="nav-icon"><a href=""><img src="./assets/icons/facebook-white.svg" /></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="grid text-center" style="--bs-columns: 3;">
+                <div class="about">
+                    <h3>About World Barista Cup</h3>
+                    <h5 class="light-grey">The vision within The World Barista Cup</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="instagram-feed">
+                    <h3>Instagram feed</h3>
+                    <div class="grid text-center" style="--bs-columns: 3;">
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-2.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+                        <div><img src="./assets/images/instagram-feed/instagram-image-1.png"></div>
+
+                    </div>
+
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <h4>World Barista Cup</h4>
+                    <p>Amagetorv 13</p>
+                    <p>1160 Copenhagen K</p>
+                    <p>+45 33 12 04 28</p>
+                    <p>CVR: 11427693</p>
+                    <p>Email: info@worldbaristacup.com</p>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"'
+                		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    	crossorigin="anonymous"></script>
+                        
 </body>
 
 </html>
