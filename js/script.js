@@ -65,6 +65,37 @@ const posts = [
   },
 ];
 
+const score = [
+  {
+    year: '2021',
+    nationality: '?',
+  },
+  {
+    year: '2020',
+    nationality: 'Denmark',
+  },
+  {
+    year: '2019',
+    nationality: 'Sweden',
+  },
+  {
+    year: '2018',
+    nationality: 'Turkey',
+  },
+  {
+    year: '2017',
+    nationality: 'Italy',
+  },
+  {
+    year: '2016',
+    nationality: 'Italy',
+  },
+  {
+    year: '2015',
+    nationality: 'Germany',
+  },
+];
+
 // Posts
 let post = `<div class="post-item">
                             <img class="post-img" src="./assets/images/posts/Post thumbnail-4.png" />
@@ -100,6 +131,11 @@ document.querySelector('.page-next').addEventListener('click', function () {
 });
 
 //Scoreboard
+let text = '';
+for (let i = 0; i < score.length; i++) {
+  text += `${score[i]['year']}: ${score[i]['nationality']} </br>`;
+}
+document.querySelector('.score-info').innerHTML = text;
 
 // Modal
 // $('.post-item').on('click', function () {
