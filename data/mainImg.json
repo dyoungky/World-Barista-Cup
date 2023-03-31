@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "imgUrl": "../assets/images/main/main1.jpg",
+    "content": "To create an environment in which knowledge about coffee and its sphere can be obtained"
+  },
+  {
+    "id": "2",
+    "imgUrl": "../assets/images/main/main2.jpg",
+    "content": "To create an environment in which knowledge about coffee and its sphere can be obtained"
+  },
+  {
+    "id": "3",
+    "imgUrl": "../assets/images/main/main3.jpg",
+    "content": "This is a great introduction do the coffee industry's best beans on the planet"
+  }
+]

@@ -1,6 +1,6 @@
 const main = [
   {
-    id: 1,
+    id: '1',
     imgUrl: './assets/images/main/main1.jpg',
     content: 'To create an environment in which knowledge about coffee and its sphere can be obtained',
   },
