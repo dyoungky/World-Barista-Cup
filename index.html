@@ -19,118 +19,119 @@
 
 <body>
     <!-- Navbar -->
-    <header>
-        <div class="navbar">
-            <div class="navbar-logo"><img src="./assets/logo-white.png"></div>
-            <div class="nav-right">
-                <div class="search-menu">
-                    <div class="search">
-                        <img src="./assets/icons/search.svg" />
-                        <input type="search" name="" id="search-input" placeholder="search">
-                    </div>
-                    <div>
-                        <ul class="social-icons">
-                            <li class="nav-icon"><a href=""><img src="./assets/icons/linkedin-white.svg" /></a></li>
-                            <li class="nav-icon"><a href=""><img src="./assets/icons/twitter-white.svg" /></a></li>
-                            <li class="nav-icon"><a href=""><img src="./assets/icons/instagram-white.svg" /></a></li>
-                            <li class="nav-icon"><a href=""><img src="./assets/icons/facebook-white.svg" /></a></li>
-                        </ul>
-                    </div>
+    <nav class="navbar">
+        <div class="navbar-logo"><img src="./assets/logo-white.png" /></div>
+        <div class="nav-content">
+            <div class="search-social">
+                <div class="search">
+                    <img src="./assets/icons/search.svg" />
+                    <input type="search" name="" id="search-input" placeholder="search">
                 </div>
-
                 <div>
-                    <ul class="menu">
-                        <li class="menu-item active" data-link="#home">About us</li>
-                        <li class="menu-item" data-link="#Events">Events</li>
-                        <li class="menu-item" data-link="#Nordic">Nordic roaster</li>
-                        <li class="menu-item" data-link="#Results">Results</li>
-                        <li class="menu-item" data-link="#Links">Links</li>
-                        <li class="menu-item" data-link="#Contact">Contact</li>
+                    <ul class="social">
+                        <li class="social-item"><a href=""><img src="./assets/icons/linkedin-white.svg" /></a></li>
+                        <li class="social-item"><a href=""><img src="./assets/icons/twitter-white.svg" /></a></li>
+                        <li class="social-item"><a href=""><img src="./assets/icons/instagram-white.svg" /></a></li>
+                        <li class="social-item"><a href=""><img src="./assets/icons/facebook-white.svg" /></a></li>
                     </ul>
                 </div>
-
+            </div>
+            <div>
+                <ul class="menu">
+                    <li class="menu-item active" data-link="#home">About us</li>
+                    <li class="menu-item" data-link="#Events">Events</li>
+                    <li class="menu-item" data-link="#Nordic">Nordic roaster</li>
+                    <li class="menu-item" data-link="#Results">Results</li>
+                    <li class="menu-item" data-link="#Links">Links</li>
+                    <li class="menu-item" data-link="#Contact">Contact</li>
+                </ul>
             </div>
         </div>
-    </header>
+        </div>
+    </nav>
 
     <!-- Main -->
     <section class="main">
         <div class="main-hero">
             <img class="main-img" src="./assets/images/main.png" />
-            <div class="main-quote">
-                <h4>"To create an environment in which knowledge about coffee and its sphere can be obtained"</h4>
+            <div class="slide-btn">
+                <button class="arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="30.471" height="30.471">
+                        <path id="Path_10" data-name="Path 10" d="M15.943 29.764 1.415 15.236 15.943.708" fill="none" stroke="#000" stroke-width="2" />
+                    </svg></button>
+                <button class="arrow-right"><img src="./assets/icons/arrow-right.svg" /></button>
             </div>
-
         </div>
-
-
-
         <!-- Posts -->
-
-
-
-        <div class="grid text-center post" style="--bs-columns: 10; --bs-gap: 1rem;">
-            <div class="g-col-6">
-                <div class="main-post">
-                    <div class="post-item">
-                        <img src="./assets/images/posts/Post thumbnail-4.png" />
-                        <div class="post-content">
-                            <h2>Wonderful Copenhagen 2021</h2>
-                            <p>Published 12</p>
-                            <h6>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-                                dolor sit ametLorem ipsum dolor sit amet,</h6>
-                            <button class="btn-action-white">Read more</button>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <img src="./assets/images/posts/Post thumbnail-4.png" />
-                        <div class="post-content">
-                            <h2>Wonderful Copenhagen 2021</h2>
-                            <p>Published 12</p>
-                            <h6>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-                                dolor sit ametLorem ipsum dolor sit amet,</h6>
-                            <button class="btn-action-white">Read more</button>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <img src="./assets/images/posts/Post thumbnail-4.png" />
-                        <div class="post-content">
-                            <h2>Wonderful Copenhagen 2021</h2>
-                            <p>Published 12</p>
-                            <h6>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-                                dolor sit ametLorem ipsum dolor sit amet,</h6>
-                            <button class="btn-action-white">Read more</button>
-                        </div>
-                    </div>
-
-                    <div class="post-pages">
-                        <button class="btn-action-white">Previous</button>
-                        <p>Page 1 of 5</p>
-                        <button class="btn-action-white">Next</button>
+        <div class="container text-center">
+            <div class="row row-cols-2">
+                <div class="col" style="width:70%">
+                    <div class="main-quote">
+                        <p>"To create an environment in which knowledge about coffee and its sphere can be obtained"</p>
                     </div>
                 </div>
-            </div>
-            <div class="g-col-4">
-                <div class="post-right">
-                    <div class="shop">
-                        <h4>WBC Shop</h4>
-                        <p>Your shopping cart is empty</p>
-                        <button class="btn-action-white">Visit the shop</button>
-                    </div>
+                <div class="col" style="width:30%"></div>
+                <div class="col" style="width:70%">
+                    <div class="main-post">
+                        <div class="post-item">
+                            <img src="./assets/images/posts/Post thumbnail-4.png" />
+                            <div class="post-content">
+                                <h2>Wonderful Copenhagen 2021</h2>
+                                <p>Published 12</p>
+                                <p>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                                    dolor sit ametLorem ipsum dolor sit amet,</p>
+                                <button class="btn-action-white">Read more</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/images/posts/Post thumbnail-4.png" />
+                            <div class="post-content">
+                                <h2>Wonderful Copenhagen 2021</h2>
+                                <p>Published 12</p>
+                                <p>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                                    dolor sit ametLorem ipsum dolor sit amet,</p>
+                                <button class="btn-action-white">Read more</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/images/posts/Post thumbnail-4.png" />
+                            <div class="post-content">
+                                <h2>Wonderful Copenhagen 2021</h2>
+                                <p>Published 12</p>
+                                <p>Lorem ipsum dolor sit amet Lorem ip dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                                    dolor sit ametLorem ipsum dolor sit amet,</p>
+                                <button class="btn-action-white">Read more</button>
+                            </div>
+                        </div>
 
-                    <div class="event">
-                        <h4>Next event</h4>
-                        <h6>World Barista Cup 2021</h6>
-                        <p>Copenhagen, Denmark</p>
-                        <p>Dates: 25th, 27th August 2021</p>
-                        <p>Theme: SENSORY</p>
-                        <button class="btn-action-white">Sign up now</button>
+                        <div class="post-pages">
+                            <button class="btn-action-white">Previous</button>
+                            <p>Page 1 of 3</p>
+                            <button class="btn-action-white">Next</button>
+                        </div>
                     </div>
+                </div>
+                <div class="col" style="width:30%">
+                    <div class="post-right">
+                        <div class="shop">
+                            <h3>WBC Shop</h3>
+                            <p>Your shopping cart is empty</p>
+                            <button class="btn-action-white">Visit the shop</button>
+                        </div>
 
-                    <div class="score">
-                        <h4>Scoreboard</h4>
-                        <h6>List of winners from last year</h6>
-                        <p>2021 -</p>
+                        <div class="event">
+                            <h3>Next event</h3>
+                            <h4>World Barista Cup 2021</h4>
+                            <p>Copenhagen, Denmark</p>
+                            <p>Dates: 25th, 27th August 2021</p>
+                            <p>Theme: SENSORY</p>
+                            <button class="btn-action-white">Sign up now</button>
+                        </div>
+
+                        <div class="score">
+                            <h3>Scoreboard</h3>
+                            <h4>List of winners from last year</h4>
+                            <p><span>2021</span> - <span>?</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,12 +149,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-main"><img class="footer-logo" src="./assets/logo-white.png" />
-            <div class="social-media">
-                <ul class="social-icons">
-                    <li class="nav-icon"><a href=""><img src="./assets/icons/linkedin-white.svg" /></a></li>
-                    <li class="nav-icon"><a href=""><img src="./assets/icons/twitter-white.svg" /></a></li>
-                    <li class="nav-icon"><a href=""><img src="./assets/icons/instagram-white.svg" /></a></li>
-                    <li class="nav-icon"><a href=""><img src="./assets/icons/facebook-white.svg" /></a></li>
+            <div>
+                <ul class="social">
+                    <li class="social-item"><a href=""><img src="./assets/icons/linkedin-white.svg" /></a></li>
+                    <li class="social-item"><a href=""><img src="./assets/icons/twitter-white.svg" /></a></li>
+                    <li class="social-item"><a href=""><img src="./assets/icons/instagram-white.svg" /></a></li>
+                    <li class="social-item"><a href=""><img src="./assets/icons/facebook-white.svg" /></a></li>
                 </ul>
             </div>
         </div>
@@ -163,10 +164,9 @@
                 <div class="about">
                     <h3>About World Barista Cup</h3>
                     <h5 class="light-grey">The vision within The World Barista Cup</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="instagram-feed">
                     <h3>Instagram feed</h3>
@@ -197,8 +197,6 @@
 
         </section>
     </footer>
-
-
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"'
