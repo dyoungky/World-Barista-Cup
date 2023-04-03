@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 p {
     font-size: 1.15rem;
 }
@@ -97,22 +101,39 @@ h6 {
 /* Modal */
 .black-bg {
     width: 100%;
-    height: 100vw;
+    height: 100%;
     position: fixed;
     background: rgba(0, 0, 0, 0.5);
     z-index: 5;
-    padding: 30px;
+    padding: 50px 30px;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s;
+    overflow: auto;
+    display: flex;
+    top: 0;
 }
 
 .white-bg {
     background: white;
-    padding: 30px;
-    width: 70%;
-    margin-top: 100px;
+    width: 60%;
+    margin-top: 50px;
+    height: fit-content;
+}
 
+.fadeInUp {
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
 .show-modal {
@@ -120,9 +141,24 @@ h6 {
     opacity: 1;
 }
 
+.white-bg img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-contents {
+    padding: 70px 50px 100px 50px;
+    background-color: var(--color-white);
+}
+
 .close-btn {
     background-color: #000000;
     color: #fff;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: -30px;
 }
 
 /* Navbar */
