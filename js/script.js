@@ -139,9 +139,8 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   touch: false,
 });
 
-console.log(instagramImg);
 // Posts
-let post = `<div class="post-item show">
+let post = `<div class="post-item">
                             <img class="post-img" src="./assets/images/posts/Post thumbnail-4.png" />
                             <div class="post-content">
                                 <h2>Practice</h2>
@@ -181,11 +180,6 @@ for (let i = 0; i < score.length; i++) {
 }
 document.querySelector('.score-info').innerHTML = text;
 
-// Modal
-// $('.post-item').on('click', function () {
-//   $('.black-bg').addClass('show-modal');
-// });
-
 // Sponsors feed
 sponsorsImg.forEach(function (img, i) {
   let instagram = `<div><img src="./assets/images/sponsors/sponsor-${i + 1}.png"></div>`;
@@ -198,4 +192,34 @@ instagramImg.forEach(function (img, i) {
   document.querySelector('.instagram-imgs').insertAdjacentHTML('beforeEnd', instagram);
 });
 
-// Page
+// Modal
+function modal() {
+  for (let i = 0; i < posts.length; i++) {
+    let selectedItem = posts[i].id;
+    let modal = `
+  <img src="${posts[i].imgUrl}">
+  <h1>${posts[i].title}</h1>
+  <h4>${posts[i].date}</h4>
+  <p>${posts[i].content}</p>`;
+    $('.post-item')
+      .eq(i)
+      .on('click', function (e) {
+        document.querySelector('.white-bg').innerHTML = '';
+        $('.black-bg').addClass('show-modal');
+        $('.white-bg').append(modal);
+      });
+  }
+  $('.close-btn', '.black-bg').on('click', function () {
+    $('.black-bg').removeClass('show-modal');
+  });
+
+  $('.black-bg').on('click', function (e) {
+    let target = e.target;
+    console.log(target);
+    if (target == document.querySelector('.black-bg')) {
+      $('.black-bg').removeClass('show-modal');
+    }
+  });
+}
+
+modal();
