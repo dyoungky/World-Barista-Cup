@@ -96,8 +96,52 @@ const score = [
   },
 ];
 
+const sponsorsImg = [
+  '../assets/images/sponsors/sponsor-20.png',
+  '../assets/images/sponsors/sponsor-1.png',
+  '../assets/images/sponsors/sponsor-.png',
+  '../assets/images/sponsors/sponsor-3.png',
+  '../assets/images/sponsors/sponsor-4.png',
+  '../assets/images/sponsors/sponsor-5.png',
+  '../assets/images/sponsors/sponsor-6.png',
+  '../assets/images/sponsors/sponsor-7.png',
+  '../assets/images/sponsors/sponsor-8.png',
+  '../assets/images/sponsors/sponsor-9.png',
+  '../assets/images/sponsors/sponsor-10.png',
+  '../assets/images/sponsors/sponsor-11.png',
+  '../assets/images/sponsors/sponsor-12.png',
+  '../assets/images/sponsors/sponsor-13.png',
+  '../assets/images/sponsors/sponsor-14.png',
+  '../assets/images/sponsors/sponsor-15.png',
+  '../assets/images/sponsors/sponsor-16.png',
+  '../assets/images/sponsors/sponsor-17.png',
+  '../assets/images/sponsors/sponsor-19.png',
+  '../assets/images/sponsors/sponsor-18.png',
+];
+
+const instagramImg = [
+  '../assets/images/instagram-feed/instagram-image-1.png',
+  '../assets/images/instagram-feed/instagram-image-2.png',
+  '../assets/images/instagram-feed/instagram-image-3.png',
+  '../assets/images/instagram-feed/instagram-image-4.png',
+  '../assets/images/instagram-feed/instagram-image-5.png',
+  '../assets/images/instagram-feed/instagram-image-6.png',
+  '../assets/images/instagram-feed/instagram-image-7.png',
+  '../assets/images/instagram-feed/instagram-image-8.png',
+  '../assets/images/instagram-feed/instagram-image-9.png',
+];
+
+// Main images
+const myCarouselElement = document.querySelector('#myCarousel');
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false,
+});
+
+console.log(instagramImg);
 // Posts
-let post = `<div class="post-item">
+let post = `<div class="post-item show">
                             <img class="post-img" src="./assets/images/posts/Post thumbnail-4.png" />
                             <div class="post-content">
                                 <h2>Practice</h2>
@@ -141,3 +185,17 @@ document.querySelector('.score-info').innerHTML = text;
 // $('.post-item').on('click', function () {
 //   $('.black-bg').addClass('show-modal');
 // });
+
+// Sponsors feed
+sponsorsImg.forEach(function (img, i) {
+  let instagram = `<div><img src="./assets/images/sponsors/sponsor-${i + 1}.png"></div>`;
+  document.querySelector('.sponsors-imgs').insertAdjacentHTML('beforeEnd', instagram);
+});
+
+// Instagram feed
+instagramImg.forEach(function (img, i) {
+  let instagram = `<div><img src="./assets/images/instagram-feed/instagram-image-${i + 1}.png"></div>`;
+  document.querySelector('.instagram-imgs').insertAdjacentHTML('beforeEnd', instagram);
+});
+
+// Page
