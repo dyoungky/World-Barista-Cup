@@ -30,6 +30,29 @@ button {
 input {
     background-color: transparent;
     border: none;
+    color: var(--color-white);
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input::placeholder {
+    color: var(--color-white);
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
 }
 
 li {
@@ -70,10 +93,6 @@ h5 {
 h6 {
     font-size: 1.125rem;
     font-weight: 100;
-}
-
-::placeholder {
-    color: var(--color-white)
 }
 
 /* button */
@@ -204,6 +223,48 @@ nav {
     margin-right: 30px;
 }
 
+.search {
+    position: relative;
+}
+
+.search-result {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    padding-top: 25px;
+    background-color: var(--color-black);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    width: 25vw;
+    overflow-y: hidden;
+}
+
+.result-title {
+    font-size: 1.25rem;
+}
+
+.result-date {
+    font-size: 0.85rem;
+    margin: 10px 0;
+}
+
+.result-content {
+    font-size: 0.85rem;
+    height: 46px;
+    overflow-y: hidden;
+    border-bottom: 1px solid #ffffff78;
+    width: 80%;
+    padding-bottom: 58px;
+    margin: 15px 0 30px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.6rem;
+}
 
 /* Social */
 .social {
@@ -347,13 +408,10 @@ main .list .item:hover {
 }
 
 .post-item img {
-    width: 90%;
-    height: 90%;
-}
-
-.post img {
-    max-width: 13vw;
-    max-height: 13vw;
+    object-fit: cover;
+    max-width: 270px;
+    max-height: 100%;
+    margin: 0;
 }
 
 .post-content {
@@ -363,6 +421,8 @@ main .list .item:hover {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
+    max-height: 300px;
+    margin: 0;
 }
 
 .post-content h2 {
@@ -371,18 +431,26 @@ main .list .item:hover {
 
 .published-date {
     color: var(--color-dark-grey);
-    margin: 12px 0;
+    margin: 25px 0;
     font-size: 1rem;
 }
 
 .published-date,
 .content {
-    line-height: 2rem;
+    line-height: 1rem;
 }
 
 .content {
-    height: 100px;
+    max-width: 100%;
+    background: white;
     overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 112px;
+    line-height: 1.75rem;
+    margin: 0 0 30px 0;
 }
 
 .post-pages {
